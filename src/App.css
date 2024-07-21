@@ -27,6 +27,37 @@
 .aboutMeTitle {
   font-size: 1em;
 }
+.navBar {
+  min-width: 260px;
+  list-style-type: none;
+  margin: 0;
+  padding: 30px 0;
+  background-color: #0C2D48;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navItem, .currentPageNavItem {
+  color: #ffffffde;
+  margin: 0 20px;
+  padding: 20px;
+}
+.navItem:hover, .currentPageNavItem:hover {
+  background-color: #145DA0;
+  color: #ffffffde;
+  border-radius: 50px;
+}
+.currentPageNavItem {
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ffffffde;
+}
+.pageNotFound {
+  padding: 20px 30px;
+  width: 200px;
+  font-size: 0.8em;
+}
 
 @media screen and (min-width: 480px){
   .intro {
@@ -46,6 +77,13 @@
   .profileImage {
     width: 200px;
     border-radius: 100px;
+  }
+  .navBar {
+    width: 320px;
+  }
+  .pageNotFound {
+    width: 200px;
+    padding: 20px 60px;
   }
 }
 
@@ -68,6 +106,14 @@
     padding-left: 30px;
     grid-area: 2 / 2 / 3 / 3;
   }
+  .navBar {
+    width: 550px;
+  }
+  .pageNotFound {
+    padding: 20px 100px;
+    width: 350px;
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (min-width: 1000px){
@@ -87,5 +133,14 @@
   }
   .profileImage {
     grid-area: 1 / 1 / 3 / 2;
+  }
+  .navBar {
+    width: 850px;
+    margin: auto;
+  }
+  .pageNotFound {
+    padding: 20px 250px;
+    width: 500px;
+    font-size: 2em;
   }
 }

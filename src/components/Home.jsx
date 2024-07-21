@@ -1,8 +1,11 @@
+import NavBar from './NavBar'
+
 export default function Home() {
     
     return (
         <>
-            <article className="intro">
+                <NavBar />
+                <article className="intro">
                 <h1 className="title">Elizabeth Ray</h1>
                 <p className="jobTitle">Junior Software Developer</p>
             </article>
