@@ -4,3 +4,88 @@
   padding: 2rem;
   text-align: center;
 }
+
+.title {
+  margin-bottom: 0;
+}
+.jobTitle {
+  font-style: italic;
+  font-size: 1em;
+}
+.profileImage {
+  width: 150px;
+  border-radius: 100px;
+}
+.intro {
+  margin-bottom: 30px;
+}
+.aboutMeText {
+  text-align: justify;
+  width: 260px;
+  font-size: 0.8em;
+}
+.aboutMeTitle {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 480px){
+  .intro {
+    margin-bottom: 60px;
+  }
+  .jobTitle {
+    font-style: italic;
+    font-size: 1.4em;
+  }
+  .aboutMeTitle{
+    font-size: 1.5em; 
+  }
+  .aboutMeText {
+    width: 320px;
+    font-size: 1em;
+  }
+  .profileImage {
+    width: 200px;
+    border-radius: 100px;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+  .aboutMeTitle {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .profileImage {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .aboutMeText {
+    margin: 0;
+    padding-left: 30px;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #root {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+  }
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 200px 650px;
+    grid-template-rows: min-content 1fr;
+    margin: 0 auto;
+  }
+  .aboutMeText {
+    width: 90%;
+  }
+  .profileImage {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+}
