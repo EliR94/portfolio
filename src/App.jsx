@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home'
 import NotFound from './components/NotFound';
 import ProjectsList from './components/ProjectsList'
+import ProjectItem from './components/ProjectItem';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<ProjectsList />} />
+          <Route path='/projects/:project' element={<ProjectItem />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

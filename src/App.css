@@ -33,28 +33,21 @@ h1 {
   list-style-type: none;
   margin: 0;
   padding: 30px 0;
-  background-color: #0C2D48;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 .navItem, .currentPageNavItem {
-  color: #ffffffde;
   margin: 0 20px;
   padding: 20px;
 }
 .navItem:hover, .currentPageNavItem:hover {
-  color: #ffffffde;
   border-radius: 50px;
-}
-.navItem:hover {
-  background-color: #145DA0;
 }
 .currentPageNavItem {
   border-radius: 50px;
   border-style: solid;
   border-width: 5px;
-  border-color: #ffffffde;
 }
 .pageNotFound {
   padding: 20px 30px;
@@ -67,11 +60,16 @@ h1 {
 }
 .projectCard {
   border: solid 5px;
+  border-radius: 20px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
 .projectImage {
+  width: 250px;
+  /* margin: 0 auto; */
+}
+.projectImageCropped {
   width: 250px;
   height: 100px;
   object-fit: cover;
@@ -79,8 +77,20 @@ h1 {
   margin: 0 auto;
 }
 .seeMoreButton {
-  margin: 5px auto;
+  margin: 0;
+  padding: 0;
   width: 150px;
+  margin: 5px auto;
+}
+.seeMoreLink {
+  display: block;
+  width: 144px;
+  height: 50px;
+}
+.seeMoreText {
+  height: 20px;
+  margin: 0;
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 480px){
