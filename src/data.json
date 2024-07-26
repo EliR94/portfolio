@@ -1,13 +1,13 @@
 [
     {
         "title": "Elizabeth Ray Portfolio",
+        "type": "solo",
         "frontend": {
-            "desctiption": "This web app I created to display my portfolio projects.",
+            "description": "This web app I created to display my portfolio projects.",
             "tech": "React, JavaScript, HTML, CSS, Node.js",
-            "created": "Building and Hosting: 20/06/2024 - present",
-            "hosted_link": "TBC - not currently hosted yet",
-            "repo_link": "https://github.com/EliR94/portfolio",
-            "type": "solo"
+            "created": "Built: 20/06/2024 - present. Deployed: TBC - not live yet",
+            "hosted_link": "TBC - not live yet",
+            "repo_link": "https://github.com/EliR94/portfolio"
         }
     },
     {
@@ -16,16 +16,16 @@
         "type": "group",
         "demo_video": "https://northcoders.com/project-phase/city-explorer",
         "frontend": {
-            "desctiption": "This mobile and web app is designed to help tourists explore UK cities through suggestions of local attractions. The app organises the attractions the user wants to visit into a personal bucket list based on preferences, and plans the most efficient route between them. This app was developed by 'Bug Busters' as our final project for Northcoders Software Development Bootcamp.",
+            "description": "This mobile and web app is designed to help tourists explore UK cities through suggestions of local attractions. The app organises the attractions the user wants to visit into a personal bucket list based on preferences, and plans the most efficient route between them. This app was developed by 'Bug Busters' as our final project for Northcoders Software Development Bootcamp.",
             "tech": "React Native, React Native Maps, TypeScript, Google Maps APIs, Node.js, Expo, Netlify.",
-            "created": "Project planning and spiking: 25/06/2024 - 28/06/2024. Building: 01/07/2024 - 10/07/2024. Demo video: 11/07/2024. Deployed: 16/07/2024.",
+            "created": "Project planning and Spiking: 25/06/2024 - 28/06/2024. Built: 01/07/2024 - 10/07/2024. Demo Video Created: 11/07/2024. Deployed: 16/07/2024.",
             "hosted_link": "https://city-explorer-web.netlify.app/",
             "repo_link": "https://github.com/michael-farah/city-explorer-app"
         },
         "backend": {
-            "desctiption": "This backend project includes both the database and the API for our City Explorer App. The database stores information about the users, city information, and the attractions the users have stored in their bucket lists for each city.",
+            "description": "This backend project includes both the database and the API for our City Explorer App. The database stores information about the users, city information, and the attractions the users have stored in their bucket lists for each city.",
             "tech": "JavaScript, Node.js, Jest, SuperTest, PostgreSQL, Supabase, Render.",
-            "created": "Building and Hosting: 01/07/2024 - 10/07/2024.",
+            "created": "Built: 01/07/2024 - 02/07/2024 (a few updates made since). Hosted: 02/07/2024.",
             "hosted_link": "https://city-explorer-backend-6i2i.onrender.com/api/",
             "repo_link": "https://github.com/EliR94/city-explorer-backend"
         }
@@ -35,16 +35,16 @@
         "type": "solo",
         "image_name": "NCNews.png",
         "frontend": {
-            "desctiption": "A web app to display news articles and all of their details. With functionality for users to vote on articles, leave comments and sort the articles in many different ways.",
+            "description": "A web app to display news articles and all of their details. With functionality for users to vote on articles, leave comments and sort the articles in many different ways.",
             "tech": "React, JavaScript, HTML, CSS, Node.js, NC News API, Netlify.",
-            "created": "Building and Hosting: 17/06/2024 - 21/06/2024.",
+            "created": "Built: 17/06/2024 - 21/06/2024. Deployed: 21/06/2024.",
             "hosted_link": "https://elir-nc-news.netlify.app/",
             "repo_link": "https://github.com/EliR94/fe-nc-news"
         },
         "backend": {
-            "desctiption": "This backend project includes both the database and the API for my NC News App. The database stores information about the articles, including information, votes, comments and the users.",
+            "description": "This backend project includes both the database and the API for my NC News App. The database stores information about the articles, including information, votes, comments and the users.",
             "tech": "JavaScript, Node.js, Jest, SuperTest, PostgreSQL, Supabase, Render.",
-            "created": "Building and Hosting: 28/05/2024 - 31/05/2024. A few updates have been made since.",
+            "created": "Built: 28/05/2024 - 31/05/2024 (a few updates made since). Hosted: 31/05/2024.",
             "hosted_link": "https://nc-news-ms3a.onrender.com/api",
             "repo_link": "https://github.com/EliR94/BE-NC-NEWS"
         }
@@ -54,9 +54,9 @@
         "type": "solo",
         "image_name": "HTML&CSS.png",
         "frontend": {
-            "desctiption": "A HTML and CSS only site for fun, displaying information about Ducks. Showing my skill level with HTML and CSS from the first week of my Northcoders Software Development Bootcamp",
+            "description": "A HTML and CSS only site for fun, displaying information about Ducks. Showing my skill level with HTML and CSS from the first week of my Northcoders Software Development Bootcamp",
             "tech": "HTML, CSS, GitHub Pages",
-            "created": "Building and Hosting: 19/04/2024",
+            "created": "Built and Deployed: 19/04/2024",
             "hosted_link": "https://elir94.github.io/intro-week-html-css-NEW/",
             "repo_link": "https://github.com/EliR94/intro-week-html-css-NEW"
         }
