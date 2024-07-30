@@ -96,6 +96,15 @@ button:focus-visible {
   .currentPageNavItem {
     border-color: #DDFFE7;
   }
+  .externalLink {
+    color: #DDFFE7;
+    background-color: #29A0B1;
+    border: 10px #29A0B1 solid;
+  }
+  .externalLink:hover {
+    background-color: #213547;
+    border: 10px #213547 solid;
+  }
 }
 
 @media screen and (min-width: 480px){
