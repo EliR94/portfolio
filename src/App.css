@@ -40,7 +40,7 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.projectItemSection {
+.projectItemFrontend, .projectItemFullStack {
   width: 260px;
 }
 .navItem, .currentPageNavItem {
@@ -111,8 +111,13 @@ h1 {
   background-color: #145DA0;
   border: 10px #0C2D48 solid;
 }
-.projectItemSection {
+.projectItemFrontend, .projectItemFullStack {
   font-size: 0.75em;
+}
+.projectCreatedInfo {
+  margin: auto;
+  padding: 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 480px){
@@ -122,6 +127,9 @@ h1 {
   .jobTitle {
     font-style: italic;
     font-size: 1.4em;
+  }
+  .projectH2 {
+    font-size: 1.2em;
   }
   .aboutMeTitle{
     font-size: 1.5em; 
@@ -134,7 +142,7 @@ h1 {
     width: 200px;
     border-radius: 100px;
   }
-  .navBar, .projectItemSection {
+  .navBar, .projectItemFrontend, .projectItemFullStack {
     width: 320px;
   }
   .pageNotFound {
@@ -162,7 +170,7 @@ h1 {
     padding-left: 30px;
     grid-area: 2 / 2 / 3 / 3;
   }
-  .navBar, .projectItemSection {
+  .navBar, .projectItemFrontend, .projectItemFullStack {
     width: 550px;
   }
   .pageNotFound {
@@ -179,6 +187,10 @@ h1 {
   }
   .projectCard {
     min-width: 250px;
+  }
+  .projectDescription, .projectTechStack {
+    width: 350px;
+    margin: 12px auto;
   }
 }
 
@@ -204,8 +216,9 @@ h1 {
     width: 850px;
     margin: auto;
   }
-  .projectItemSection {
-    width: 1000px;
+  .projectItemFrontend, .projectItemFullStack {
+    width: 800px;
+    margin: 0 auto;
   }
   .pageNotFound {
     padding: 20px 250px;
@@ -221,5 +234,29 @@ h1 {
   }
   .projectCard {
     min-width: 250px;
+  }
+  .projectGridFullStack {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 1fr;
+  }
+  .projectItemFullStack  {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: min-content 50px min-content;
+  }
+  .projectGridFullStack {
+    grid-area: 2 / 2 / 4 / 3;
+  }
+  .projectTitle {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-bottom: 20px;
+  }
+  .projectImage {
+    grid-area: 3 / 1 / 4 / 2;
+    margin: auto;
+  }
+  .projectH2 {
+    grid-area: 2 / 1 / 3 / 2;
   }
 }
