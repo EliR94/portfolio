@@ -1,6 +1,7 @@
 import NavBar from "./NavBar"
 import data from '../data.json'
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function Projects() {
     return (
@@ -22,6 +23,7 @@ export default function Projects() {
                     )}
                 </ul>
             </section>
+            <Footer />
         </>
     )
 }

@@ -1,5 +1,6 @@
 import NavBar from "./NavBar"
 import data from '../data.json'
+import Footer from "./Footer";
 import { useLocation } from "react-router-dom";
 
 export default function ProjectItem() {
@@ -49,6 +50,7 @@ export default function ProjectItem() {
                     : null}
                 </section>
             </section>
+            <Footer />
         </>
     )
 }
