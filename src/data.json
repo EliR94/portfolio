@@ -1,12 +1,13 @@
 [
     {
         "title": "Elizabeth Ray Portfolio",
+        "image_name": "Portfolio.png",
         "type": "solo",
         "frontend": {
             "description": "This web app I created to display my portfolio projects.",
             "tech": "React, JavaScript, HTML, CSS, Node.js",
-            "created": ["Built: 20/06/2024 - present.", "Deployed: TBC - not live yet"],
-            "hosted_link": "TBC - not live yet",
+            "created": ["Built: 20/07/2024 - 01/08/2024.", "Deployed: 01/08/2024"],
+            "hosted_link": "https://EliR94.github.io/portfolio",
             "repo_link": "https://github.com/EliR94/portfolio"
         }
     },
