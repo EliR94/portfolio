@@ -18,7 +18,7 @@ export default function ProjectItem() {
             <section className={project.backend ? "projectItemFrontend" : "projectItemFullStack"}>
                     <h1 className="projectTitle">{project.title.toUpperCase()}</h1>
                     {project.image_name ? 
-                        <img className="projectImage" src={`/assets/${project.image_name}`} alt={`${project.title} preview image`}/>
+                        <img className="projectImage" src={import.meta.env.BASE_URL + `/assets/${project.image_name}`} alt={`${project.title} preview image`}/>
                         : null}
                     <h2 className="projectH2">{project.type.toUpperCase()} PROJECT</h2>
                 <section className={project.backend ? "projectGridFullStack" : null}>
