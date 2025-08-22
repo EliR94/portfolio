@@ -26,7 +26,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
-          name: my-artifact-ubuntu-latest
+          name: production-files
           path: ./dist
 
   deploy:
@@ -39,11 +39,10 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: production-files-ubuntu-latest
+          name: production-files
           path: ./dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dists
