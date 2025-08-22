@@ -7,11 +7,8 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        runs-on: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.runs-on }}
     name: Build
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
@@ -29,7 +26,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
-          name: my-artifact-${{ matrix.runs-on }}
+          name: my-artifact-ubuntu-latest
           path: ./dist
 
   deploy:
