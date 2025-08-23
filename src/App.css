@@ -127,7 +127,7 @@ h1 {
 
 @media screen and (min-width: 480px){
   .intro {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .jobTitle {
     font-style: italic;
@@ -219,6 +219,7 @@ h1 {
   }
   .profileImage {
     grid-area: 1 / 1 / 3 / 2;
+    margin-top: auto;
   }
   .navBar {
     width: 850px;

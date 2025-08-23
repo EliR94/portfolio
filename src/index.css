@@ -27,6 +27,13 @@ h1 {
   font-size: 2.2em;
   line-height: 1.1;
 }
+video {
+  width: 100%;
+  height: auto;
+}
+.video {
+  margin-bottom: 6vh;
+}
 .projectCard {
   border-color: #0C2D48;
 }

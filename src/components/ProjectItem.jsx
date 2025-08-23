@@ -2,6 +2,7 @@ import NavBar from "./NavBar"
 import data from '../data.json'
 import Footer from "./Footer";
 import { useLocation } from "react-router-dom";
+import { useState, useRef } from 'react';
 
 export default function ProjectItem() {
     const location = useLocation();
@@ -12,14 +13,47 @@ export default function ProjectItem() {
     const projectIndex = data.findIndex((project) => project.title === projectTitle)
     const project = data[projectIndex]
 
+    const [isPlaying, setIsPlaying] = useState(false);
+    const ref = useRef(null);
+
+    function handleClick() {
+        const nextIsPlaying = !isPlaying;
+        setIsPlaying(nextIsPlaying);
+
+        if (nextIsPlaying) {
+        ref.current.play();
+        } else {
+        ref.current.pause();
+        }
+    }
+
     return (
         <>
             <NavBar />
             <section className={project.backend ? "projectItemFrontend" : "projectItemFullStack"}>
                     <h1 className="projectTitle">{project.title.toUpperCase()}</h1>
-                    {project.image_name ? 
+
+                    {project.demo_video ? 
+                    <section className="video">
+                        <h2>Demo Video:</h2>
+                        <video
+                            onClick={handleClick}
+                            ref={ref}
+                            onPlay={() => setIsPlaying(true)}
+                            onPause={() => setIsPlaying(false)}
+                        >
+                            <source
+                                src={import.meta.env.BASE_URL + `/assets/bug busters city explorer demo.mp4`}
+                                type="video/mp4"
+                            />
+                        </video>
+                        <button onClick={handleClick}>
+                            {isPlaying ? 'Pause' : 'Play'}
+                        </button>
+                    </section>
+                    : project.image_name ? 
                         <img className="projectImage" src={import.meta.env.BASE_URL + `/assets/${project.image_name}`} alt={`${project.title} preview image`}/>
-                        : null}
+                    : null}
                     <h2 className="projectH2">{project.type.toUpperCase()} PROJECT</h2>
                 <section className={project.backend ? "projectGridFullStack" : null}>
                     <section className="frontendSection">
@@ -29,11 +63,10 @@ export default function ProjectItem() {
                         </ul>
                         <p className="projectDescription">{project.frontend.description}</p>
                         <p className="projectTechStack">Tech Stack: {project.frontend.tech}</p>
-                        <a className="externalLink" href={project.frontend.hosted_link}target="_blank">Visit the live site!</a>
+                        {project.title === "City Explorer" ? null : 
+                            <a className="externalLink" href={project.frontend.hosted_link}target="_blank">Visit the live site!</a>
+                        }
                         <a className="externalLink" href={project.frontend.repo_link}target="_blank">See the repo!</a>
-                        {project.demo_video ? 
-                            <a className="externalLink" href={project.demo_video} target="_blank">Watch the demo video on the Northcoders website!</a>
-                        : null}
                     </section>
                     {project.backend ? 
                     <section className="backendSection">
