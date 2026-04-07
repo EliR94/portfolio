@@ -43,7 +43,7 @@ export default function ProjectItem() {
                             onPause={() => setIsPlaying(false)}
                         >
                             <source
-                                src={import.meta.env.BASE_URL + `assets/bug-busters-city-explorer-demo.mp4`}
+                                src={import.meta.env.BASE_URL + project.demo_video}
                                 type="video/mp4"
                             />
                         </video>
