@@ -2,7 +2,6 @@ import NavBar from "./NavBar"
 import data from '../data.json'
 import Footer from "./Footer";
 import { useLocation } from "react-router-dom";
-import { useState, useRef } from 'react';
 
 export default function ProjectItem() {
     const location = useLocation();
@@ -11,21 +10,8 @@ export default function ProjectItem() {
     const projectTitle = pathnameArr[pathnameArr.length-1].replaceAll('-', ' ')
 
     const projectIndex = data.findIndex((project) => project.title === projectTitle)
-    const project = data[projectIndex]
-
-    const [isPlaying, setIsPlaying] = useState(false);
-    const ref = useRef(null);
-
-    function handleClick() {
-        const nextIsPlaying = !isPlaying;
-        setIsPlaying(nextIsPlaying);
-
-        if (nextIsPlaying) {
-        ref.current.play();
-        } else {
-        ref.current.pause();
-        }
-    }
+    const project = data[projectIndex];
+    if (!project) return <div>Item not found</div>;
 
     return (
         <>
@@ -36,27 +22,19 @@ export default function ProjectItem() {
                     {project.demo_video ? 
                     <section className="video">
                         <h2>Demo Video:</h2>
-                        <video
-                            onClick={handleClick}
-                            ref={ref}
-                            onPlay={() => setIsPlaying(true)}
-                            onPause={() => setIsPlaying(false)}
-                        >
+                        <video controls controlsList="nodownload">
                             <source
-                                src={import.meta.env.BASE_URL + project.demo_video}
+                                src={`${import.meta.env.BASE_URL}${project.demo_video}`}
                                 type="video/mp4"
                             />
                         </video>
-                        <button onClick={handleClick}>
-                            {isPlaying ? 'Pause' : 'Play'}
-                        </button>
                     </section>
                     : project.image_name ? 
                         <img className="projectImage" src={import.meta.env.BASE_URL + `/assets/${project.image_name}`} alt={`${project.title} preview image`}/>
                     : null}
                     <h2 className="projectH2">{project.type.toUpperCase()} PROJECT</h2>
                 <section className={project.backend ? "projectGridFullStack" : null}>
-                    <section className="frontendSection">
+                    {project.frontend && (<section className="frontendSection">
                         <h2 className="projectH2">Frontend</h2>
                         <ul className="projectCreatedInfo">
                             {project.frontend.created.map((item)=><li className="projectCreatedItem" key={item}>{item}</li>)}
@@ -67,7 +45,7 @@ export default function ProjectItem() {
                             <a className="externalLink" href={project.frontend.hosted_link}target="_blank">Visit the live site!</a>
                         }
                         <a className="externalLink" href={project.frontend.repo_link}target="_blank">See the repo!</a>
-                    </section>
+                    </section>)}
                     {project.backend ? 
                     <section className="backendSection">
                         <h2 className="projectH2">Backend</h2>
