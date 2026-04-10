@@ -22,7 +22,7 @@ export default function ProjectItem() {
                     {project.demo_video ? 
                     <section className="video">
                         <h2>Demo Video:</h2>
-                        <video controls controlsList="nodownload">
+                        <video controls preload="auto" controlsList="nodownload">
                             <source
                                 src={`${import.meta.env.BASE_URL}${project.demo_video}`}
                                 type="video/mp4"
