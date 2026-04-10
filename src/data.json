@@ -19,7 +19,7 @@
     "title": "Greeting API",
     "image_name": "GreetingAPI.png",
     "type": "solo",
-    "demo_video": "assets/greeting-api-demo-v2.mp4",
+    "demo_video": "assets/greeting-api-demo-v3.mp4",
     "backend": {
       "description": "This is a Greeting API which I built to learn Golang during half a day per week of personal development training time at work. I really enjoyed carrying out this project and learning Go and have already been using my skills on tickets at SaleCycle. I presented this API to the engineering team with a live demonstration once completed and answered their questions - although I was nervous at first to be presenting my work to senior engineers, I am really glad that I did and look forward to improving my presentation skills. The API is not hosted, but please clone the repo and give it a go - the steps are all in the README.md file.",
       "tech": "Golang",
@@ -31,7 +31,7 @@
     "title": "City Explorer",
     "image_name": "CityExplorer.png",
     "type": "group",
-    "demo_video": "assets/bug-busters-city-explorer-demo-v2.mp4",
+    "demo_video": "assets/bug-busters-city-explorer-demo-v3.mp4",
     "frontend": {
       "description": "This mobile and web app is designed to help tourists explore UK cities through suggestions of local attractions. The app organises the attractions the user wants to visit into a personal bucket list based on preferences, and plans the most efficient route between them. This app was developed by 'Bug Busters' as our final project for Northcoders Software Development Bootcamp.",
       "tech": "React Native, React Native Maps, TypeScript, Google Maps APIs, Node.js, Expo, Netlify.",
