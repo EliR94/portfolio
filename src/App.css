@@ -40,7 +40,7 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.projectItemFrontend, .projectItemFullStack {
+.projectItem, .projectItemFullStack {
   width: 260px;
 }
 .navItem, .currentPageNavItem {
@@ -111,7 +111,7 @@ h1 {
   background-color: #145DA0;
   border: 10px #0C2D48 solid;
 }
-.projectItemFrontend, .projectItemFullStack {
+.projectItem, .projectItemFullStack {
   font-size: 0.75em;
 }
 .projectCreatedInfo {
@@ -147,7 +147,7 @@ h1 {
     width: 200px;
     border-radius: 100px;
   }
-  .navBar, .projectItemFrontend, .projectItemFullStack {
+  .navBar, .projectItem, .projectItemFullStack {
     width: 320px;
   }
   .pageNotFound {
@@ -175,7 +175,7 @@ h1 {
     padding-left: 30px;
     grid-area: 2 / 2 / 3 / 3;
   }
-  .navBar, .projectItemFrontend, .projectItemFullStack {
+  .navBar, .projectItem, .projectItemFullStack {
     width: 550px;
   }
   .pageNotFound {
@@ -225,7 +225,7 @@ h1 {
     width: 850px;
     margin: auto;
   }
-  .projectItemFrontend, .projectItemFullStack {
+  .projectItem, .projectItemFullStack {
     width: 800px;
     margin: 0 auto;
   }
@@ -249,7 +249,7 @@ h1 {
     grid-template-columns: 400px 400px;
     grid-template-rows: 1fr;
   }
-  .projectItemFullStack  {
+  .projectItem  {
     display: grid;
     grid-template-columns: 400px 400px;
     grid-template-rows: min-content 50px min-content;

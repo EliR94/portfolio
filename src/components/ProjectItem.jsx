@@ -16,18 +16,12 @@ export default function ProjectItem() {
     return (
         <>
             <NavBar />
-            <section className={project.backend ? "projectItemFrontend" : "projectItemFullStack"}>
+            <section className={project.backend && project.frontend ? "projectItemFullStack" : "projectItem"}>
                     <h1 className="projectTitle">{project.title.toUpperCase()}</h1>
 
                     {project.demo_video ? 
                     <section className="video">
                         <h2>Demo Video:</h2>
-                        {/* <video controls preload="auto" controlsList="nodownload">
-                            <source
-                                src={`${import.meta.env.BASE_URL}${project.demo_video}`}
-                                type="video/mp4"
-                            />
-                        </video> */}
                         <video
                             controls
                             preload="metadata"
