@@ -16,6 +16,18 @@
     }
   },
   {
+    "title": "Greeting API",
+    "image_name": "GreetingAPI.png",
+    "type": "solo",
+    "demo_video": "assets/greeting-api-demo.mp4",
+    "backend": {
+      "description": "This is a Greeting API which I built to learn Golang during half a day per week of personal development training time at work. I really enjoyed carrying out this project and learning Go and have already been using my skills on tickets at SaleCycle. I presented this API to the engineering team with a live demonstration once completed and answered their questions - although I was nervous at first to be presenting my work to senior engineers, I am really glad that I did and look forward to improving my presentation skills. The API is not hosted, but please clone the repo and give it a go - the steps are all in the README.md file.",
+      "tech": "Golang",
+      "created": ["Built: 15/10/2025 - 19/12/2025."],
+      "repo_link": "https://github.com/EliR94/GoBackendProject"
+    }
+  },
+  {
     "title": "City Explorer",
     "image_name": "CityExplorer.png",
     "type": "group",
