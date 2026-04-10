@@ -22,11 +22,20 @@ export default function ProjectItem() {
                     {project.demo_video ? 
                     <section className="video">
                         <h2>Demo Video:</h2>
-                        <video controls preload="auto" controlsList="nodownload">
+                        {/* <video controls preload="auto" controlsList="nodownload">
                             <source
                                 src={`${import.meta.env.BASE_URL}${project.demo_video}`}
                                 type="video/mp4"
                             />
+                        </video> */}
+                        <video
+                            controls
+                            preload="metadata"
+                            controlsList="nodownload"
+                            poster={import.meta.env.BASE_URL + `/assets/${project.demo_video_thumbnail}`}
+                            width="100%"
+                        >
+                            <source src={project.demo_video} type="video/mp4" />
                         </video>
                     </section>
                     : project.image_name ? 
