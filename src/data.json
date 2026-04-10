@@ -4,14 +4,13 @@
     "image_name": "Portfolio.png",
     "type": "solo",
     "frontend": {
-      "description": "This is my portfolio web app you are currently visiting. Which I created to display my portfolio projects. It responsively adapts to screen size and also changes based on user preferences for dark or light themes - try it out!",
+      "description": "This is my portfolio web app you are currently visiting. Which I created to display my portfolio projects. It responsively adapts to screen size and also changes based on user preferences for dark or light themes - try it out with your device settings!",
       "tech": "React, JavaScript, HTML, CSS, Node.js",
       "created": [
         "Built: 20/07/2024 - 01/08/2024.",
-        "Deployed: 01/08/2024.",
-        "Last Updated 07/04/2026"
+        "First Deployed: 01/08/2024.",
+        "Last Updated/Deployed: 10/04/2026"
       ],
-      "hosted_link": "https://EliR94.github.io/portfolio",
       "repo_link": "https://github.com/EliR94/portfolio"
     }
   },
@@ -22,8 +21,8 @@
     "demo_video": "https://pub-fc151f853f54449fa9d2556ea9549460.r2.dev/greeting-api-demo-v3-compressed.mp4",
     "demo_video_thumbnail": "GreetingAPIDemoThumbnail.png",
     "backend": {
-      "description": "This is a Greeting API which I built to learn Golang during half a day per week of personal development training time at work. I really enjoyed carrying out this project and learning Go and have already been using my skills on tickets at SaleCycle. I presented this API to the engineering team with a live demonstration once completed and answered their questions - although I was nervous at first to be presenting my work to senior engineers, I am really glad that I did and look forward to improving my presentation skills. The API is not hosted, but please clone the repo and give it a go - the steps are all in the README.md file.",
-      "tech": "Golang",
+      "description": "This is a Greeting API which I built to learn Go (Golang) during half a day per week of personal development training time at work. I really enjoyed carrying out this project and learning Go (Golang) and have already been using my skills on tickets at SaleCycle. I presented this API to the engineering team with a live demonstration once completed and answered their questions - although I was nervous at first to be presenting my work to senior engineers, I am really glad that I did and look forward to further improving my presentation skills in the future. The API is not hosted, but please watch the demo video and/or clone the repo to give it a go locally - the steps are all in the README.md file.",
+      "tech": "Go (Golang)",
       "created": ["Built: 15/10/2025 - 19/12/2025."],
       "repo_link": "https://github.com/EliR94/GoBackendProject"
     }
@@ -35,7 +34,7 @@
     "demo_video": "https://pub-fc151f853f54449fa9d2556ea9549460.r2.dev/bug-busters-city-explorer-demo-v3-compressed.mp4",
     "demo_video_thumbnail": "CityExplorerDemoThumbnail.png",
     "frontend": {
-      "description": "This mobile and web app is designed to help tourists explore UK cities through suggestions of local attractions. The app organises the attractions the user wants to visit into a personal bucket list based on preferences, and plans the most efficient route between them. This app was developed by 'Bug Busters' as our final project for Northcoders Software Development Bootcamp.",
+      "description": "This mobile and web app is designed to help tourists explore UK cities through suggestions of local attractions. The app organises the attractions the user wants to visit into a personal bucket list based on preferences, and plans the most efficient route between them. This app was developed by 'Bug Busters' as our final project for Northcoders Software Development Bootcamp. Please watch the demo video if you haven't already.",
       "tech": "React Native, React Native Maps, TypeScript, Google Maps APIs, Node.js, Expo, Netlify.",
       "created": [
         "Project planning and Spiking: 25/06/2024 - 28/06/2024.",
@@ -43,11 +42,10 @@
         "Demo Video Created: 11/07/2024.",
         "Deployed: 16/07/2024."
       ],
-      "hosted_link": "https://city-explorer-web.netlify.app/",
       "repo_link": "https://github.com/michael-farah/city-explorer-app"
     },
     "backend": {
-      "description": "This backend project includes both the database and the API for our City Explorer App. The database stores information about the users, city information, and the attractions the users have stored in their bucket lists for each city.",
+      "description": "This backend project includes both the database and the API for our City Explorer App. The database stores information about the users, city information, and the attractions the users have stored in their bucket lists for each city. Please check out the API via the link below - however it is hosted for free so please be patient waiting for it to wake up!",
       "tech": "JavaScript, Node.js, Jest, SuperTest, PostgreSQL, Supabase, Render.",
       "created": [
         "Built: 01/07/2024 - 02/07/2024 (a few updates made since).",
@@ -62,7 +60,7 @@
     "type": "solo",
     "image_name": "NCNews.png",
     "frontend": {
-      "description": "A web app to display news articles and all of their details. With functionality for users to vote on articles, leave comments and sort the articles in many different ways.",
+      "description": "A web app to display news articles and all of their details. With functionality for users to vote on articles, leave comments and sort the articles in many different ways. Please check out the hosted site with the link below - but please be patient as the API is hosted for free so it will be slow at first to wake up.",
       "tech": "React, JavaScript, HTML, CSS, Node.js, NC News API, Netlify.",
       "created": ["Built: 17/06/2024 - 21/06/2024.", "Deployed: 21/06/2024."],
       "hosted_link": "https://elir-nc-news.netlify.app/",
