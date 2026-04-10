@@ -44,9 +44,9 @@ export default function ProjectItem() {
                         </ul>
                         <p className="projectDescription">{project.frontend.description}</p>
                         <p className="projectTechStack">Tech Stack: {project.frontend.tech}</p>
-                        {project.title === "City Explorer" ? null : 
-                            <a className="externalLink" href={project.frontend.hosted_link}target="_blank">Visit the live site!</a>
-                        }
+                        {project.frontend.hosted_link ? 
+                        <a className="externalLink" href={project.frontend.hosted_link}target="_blank">Visit the live site!</a>
+                        : null}
                         <a className="externalLink" href={project.frontend.repo_link}target="_blank">See the repo!</a>
                     </section>)}
                     {project.backend ? 
@@ -57,9 +57,12 @@ export default function ProjectItem() {
                         </ul>
                         <p className="projectDescription">{project.backend.description}</p>
                         <p className="projectTechStack">Tech Stack: {project.backend.tech}</p>
-
+                        {project.backend.hosted_link ? 
                         <a className="externalLink" href={project.backend.hosted_link}target="_blank">See the hosted API!</a>
+                        : null}
+                        {project.backend.repo_link ? 
                         <a className="externalLink" href={project.backend.repo_link}target="_blank">See the repo!</a>
+                        : null}
                     </section>
                     : null}
                 </section>
