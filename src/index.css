@@ -71,6 +71,12 @@ button:focus-visible {
 .currentPageNavItem {
   border-color: #ffffffde;
 }
+.only-on-dark {
+  display: block;
+}
+.only-on-light {
+  display: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -111,6 +117,12 @@ button:focus-visible {
   .externalLink:hover {
     background-color: #213547;
     border: 10px #213547 solid;
+  }
+  .only-on-dark {
+    display: none;
+  }
+  .only-on-light {
+    display: block;
   }
 }
 

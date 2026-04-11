@@ -13,7 +13,12 @@ export default function Projects() {
                     {data.map((project)=> 
                     <li key={project.title} className="projectCard">
                         <h3>{project.title}</h3>
-                        {project.image_name ? 
+                        {project.image_name_dark ? 
+                    <section className="projectImageCroppedContainer">
+                        <img className="projectImageCropped only-on-light" src={import.meta.env.BASE_URL + `/assets/${project.image_name}`} alt={`${project.title} preview image in dark mode`}/>
+                        <img className="projectImageCropped only-on-dark" src={import.meta.env.BASE_URL + `/assets/${project.image_name_dark}`} alt={`${project.title} preview image in light mode`}/>
+                    </section>
+                    : project.image_name ? 
                         <img className="projectImageCropped" src={import.meta.env.BASE_URL + `/assets/${project.image_name}`} alt={`${project.title} preview image`}/>
                         : null}
                         <button type="button" className="seeMoreButton">
