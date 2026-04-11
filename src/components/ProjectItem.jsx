@@ -26,7 +26,7 @@ export default function ProjectItem() {
                             controls
                             preload="metadata"
                             controlsList="nodownload"
-                            poster={import.meta.env.BASE_URL + `/assets/${project.demo_video_thumbnail}`}
+                            poster={import.meta.env.BASE_URL + `assets/${project.demo_video_thumbnail}`}
                             width="100%"
                         >
                             <source src={project.demo_video} type="video/mp4" />

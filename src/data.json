@@ -19,7 +19,7 @@
     "title": "Greeting API",
     "image_name": "GreetingAPI.png",
     "type": "solo",
-    "demo_video": "https://pub-fc151f853f54449fa9d2556ea9549460.r2.dev/greeting-api-demo-v3-compressed.mp4",
+    "demo_video": "https://pub-fc151f853f54449fa9d2556ea9549460.r2.dev/greeting-api-demo-compressed.mp4",
     "demo_video_thumbnail": "GreetingAPIDemoThumbnail.png",
     "backend": {
       "description": "This is a Greeting API which I built to learn Go (Golang) during half a day per week of personal development training time at work. I really enjoyed carrying out this project and learning Go (Golang) and have already been using my skills on tickets at SaleCycle. I presented this API to the engineering team with a live demonstration once completed and answered their questions - although I was nervous at first to be presenting my work to senior engineers, I am really glad that I did and look forward to further improving my presentation skills in the future. The API is not hosted, but please watch the demo video and/or clone the repo to give it a go locally - the steps are all in the README.md file.",
@@ -32,7 +32,7 @@
     "title": "City Explorer",
     "image_name": "CityExplorer.png",
     "type": "group",
-    "demo_video": "https://pub-fc151f853f54449fa9d2556ea9549460.r2.dev/bug-busters-city-explorer-demo-v3-compressed.mp4",
+    "demo_video": "https://pub-fc151f853f54449fa9d2556ea9549460.r2.dev/bug-busters-city-explorer-demo-compressed.mp4",
     "demo_video_thumbnail": "CityExplorerDemoThumbnail.png",
     "frontend": {
       "description": "This mobile and web app is designed to help tourists explore UK cities through suggestions of local attractions. The app organises the attractions the user wants to visit into a personal bucket list based on preferences, and plans the most efficient route between them. This app was developed by 'Bug Busters' as our final project for Northcoders Software Development Bootcamp. Please watch the demo video if you haven't already.",
