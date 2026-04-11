@@ -2,6 +2,7 @@
   {
     "title": "Elizabeth Ray Portfolio",
     "image_name": "Portfolio.png",
+    "image_name_dark": "PortfolioLightMode.png",
     "type": "solo",
     "frontend": {
       "description": "This is my portfolio web app you are currently visiting. Which I created to display my portfolio projects. It responsively adapts to screen size and also changes based on user preferences for dark or light themes - try it out with your device settings!",
